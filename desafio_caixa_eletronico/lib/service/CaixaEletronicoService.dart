@@ -2,7 +2,15 @@ import 'package:desafio_caixa_eletronico/model/notasModel.dart';
 
 class CaixaEletronicoService {
   NotasModel quantidadeDeNotas(NotasModel notasCaixa, int valor) {
-    NotasModel notas = notasCaixa;
+    NotasModel notas = NotasModel(
+        nota100: notasCaixa.nota100,
+        nota10: notasCaixa.nota10,
+        nota200: notasCaixa.nota200,
+        nota20: notasCaixa.nota20,
+        nota2: notasCaixa.nota2,
+        nota50: notasCaixa.nota50,
+        nota5: notasCaixa.nota5);
+
     NotasModel notasRetorno = NotasModel();
     var total = calcularTotal(notas);
     if (valor <= total) {
@@ -56,7 +64,13 @@ class CaixaEletronicoService {
     }
 
     if (notasRetorno.resto == 0) {
-      notasCaixa = notas;
+      notasCaixa.nota200 = notas.nota200;
+      notasCaixa.nota100 = notas.nota100;
+      notasCaixa.nota50 = notas.nota50;
+      notasCaixa.nota20 = notas.nota20;
+      notasCaixa.nota10 = notas.nota10;
+      notasCaixa.nota5 = notas.nota5;
+      notasCaixa.nota2 = notas.nota2;
     }
     return notasRetorno;
   }
