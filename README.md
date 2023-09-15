@@ -14,9 +14,16 @@ O programa então vai retornar:
 
 # Dependências
 
+quantity_input: ^1.0.2
+- Para os botoões de aumentar e diminuir a quantidade de notas;
+  
+provider: ^6.0.5
+- Para o gerenciamento de estados das variáveis;
 
 
 # Como preparar o ambiente
+Para poder rodar o projeto é preciso ter o flutter instalado em sua máquina
+
 Para saber como instalar o Flutter
 [ clique aqui](https://docs.flutter.dev/get-started/install)
 
