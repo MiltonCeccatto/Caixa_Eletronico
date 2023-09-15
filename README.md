@@ -1,7 +1,9 @@
 # Caixa_Eletronico
+
 Projeto em Flutter que simula  a distribuição de notas em um caixa eletrônico
 
 # Funcionamento 
+
 Usuário deve:
 - Informar a quantidade de cada cédula;
 - Informar um valor para sacar;
@@ -22,6 +24,7 @@ provider: ^6.0.5
 
 
 # Como preparar o ambiente
+
 Para poder rodar o projeto é preciso ter o flutter instalado em sua máquina
 
 Para saber como instalar o Flutter
